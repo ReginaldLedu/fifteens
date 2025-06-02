@@ -2,7 +2,7 @@
 @import '../../../../App.scss';
 
 .field {
-  width: clamp(250px, 50vw, 800px);
+  width: clamp(300px, 50vw, 800px);
   aspect-ratio: 1 / 1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
@@ -32,6 +32,7 @@
   font-family: 'Boldonse', system-ui;
   font-weight: 400;
   font-style: normal;
+  touch-action: none;
 }
 .coral {
   background-color: $button-active;

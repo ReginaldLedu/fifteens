@@ -10,6 +10,7 @@ export default function Field(props) {
   const [timer, setTimer] = useState(0);
 
   function mouseOverHandler(e) {
+    console.log('mouseover');
     const coords = e.target.getBoundingClientRect();
     const gap = 0;
     const width = coords.width;
@@ -109,6 +110,10 @@ export default function Field(props) {
                 onDragStart={() => dragStart(point)}
                 className={point.class}
                 draggable={false}
+                onTouchStart={e => {
+                  mouseOverHandler(e);
+                  dragStart(point);
+                }}
               >
                 {point.value}
               </div>

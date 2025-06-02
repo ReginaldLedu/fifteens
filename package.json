@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "netlify-cli": "^20.0.3"
+    "netlify-cli": "^20.1.1"
   }
 }
