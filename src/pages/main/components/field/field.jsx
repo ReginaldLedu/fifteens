@@ -7,7 +7,7 @@ export default function Field(props) {
   const [list, setList] = useState(props.list);
   const [chosenItem, setChosenItem] = useState({});
   const [counter, setCounter] = useState(0);
-  const [timer, setTimer] = useState(0);
+  // const [timer, setTimer] = useState(0);
 
   function mouseOverHandler(e) {
     console.log('mouseover');
